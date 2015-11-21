@@ -16,11 +16,9 @@ class Android
 
 		debug "Validating parameter"
 
-		data = @data
-		
-		errors = []
-
-		required = ['notificationOptions', 'tokens']
+		data 		= @data
+		errors 		= []
+		required 	= ['notificationOptions', 'tokens']
 
 		required.forEach (key) ->
 
