@@ -4,10 +4,6 @@ config = require '../.config'
 
 class Android
 
-	rules :
-		notificationOptions : 'required|type:object'
-		tokens : 'required|type:object'
-
 	constructor: (data) ->
 
 		debug "Creating Android Object"
