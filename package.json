@@ -1,0 +1,21 @@
+{
+  "name": "android-notification",
+  "version": "1.0.0",
+  "description": "Android Push Notification with NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "keywords": [
+    "android",
+    "push-notification"
+  ],
+  "author": "Aulia-Absari Khalil <auliaabsarikhalil@gmail.com> (https://github.com/auliaabsarikhalil)",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "expect.js": "^0.3.1",
+    "node-gcm": "^0.12.1",
+    "should": "^7.1.1"
+  }
+}
