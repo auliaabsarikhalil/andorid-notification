@@ -1,5 +1,5 @@
 # Android Notification
-This code show simple code for android push notification using node-gcm
+Code sample for android push nofication using node-gcm
 
 ## How to run it
 1. [Install and setup coffee](https://www.npmjs.com/package/coffee-script)
