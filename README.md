@@ -3,8 +3,8 @@ Code sample for android push nofication using node-gcm
 
 ## How to run it
 1. [Install and setup coffee](https://www.npmjs.com/package/coffee-script)
-2. Install all required module : `npm install`
-3. Setup app config at `.config.coffee`
+2. Install all required modules : `npm install`
+3. Setup app config at `.config.coffee` , see the sample code below
 4. run : `coffee index.coffee`
 
 ```coffeescript
