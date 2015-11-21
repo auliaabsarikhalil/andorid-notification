@@ -1,12 +1,10 @@
 # Android Notification
 Code sample for android push nofication using node-gcm
 
-## How to run it
+## Setup
 1. [Install and setup coffee](https://www.npmjs.com/package/coffee-script)
 2. Install all required modules : `npm install`
 3. Setup app config at `.config.coffee` , see the sample code below
-4. run : `coffee index.coffee`
-5. Debug Mode : `DEBUG=Android coffee index.coffee`
 
 ```coffeescript
 
@@ -21,6 +19,10 @@ module.exports =
 			key1: "test"
 
 ```
+
+## How to run it
+1. run : `coffee index.coffee`
+2. Debug Mode : `DEBUG=Android coffee index.coffee`
 
 ## How to test it
 1. Setup data variable at `test/android.coffee`, see the sample code below
