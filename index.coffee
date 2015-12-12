@@ -27,8 +27,8 @@ app.post "/send", (req, res) ->
 	data = req.body
 	android = new Android data
 	android.send (err, results)->
-		return res.status(500).json({status:"error", message:"#{err}"}) if err
-		return res.json({status:"success", message:"#{results}"})
+		return res.status(500).json({status:"error", message:err}) if err
+		return res.json({status:"success", message:results })
 
 server = app.listen config.port, config.host ,() ->
 	host = server.address().address
