@@ -22,7 +22,7 @@ module.exports =
 				delayWhileIdle: true
 				collapseKey: 'demo'
 				data: 
-				key1: "test"
+					key1: "test"
 
 ```
 
