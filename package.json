@@ -13,9 +13,12 @@
   "author": "Aulia-Absari Khalil <auliaabsarikhalil@gmail.com> (https://github.com/auliaabsarikhalil)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "debug": "^2.2.0",
     "expect.js": "^0.3.1",
+    "express": "^4.13.3",
     "node-gcm": "^0.12.1",
+    "settings": "^0.1.1",
     "should": "^7.1.1"
   }
 }

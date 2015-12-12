@@ -1,9 +1,5 @@
-module.exports =
-  android:
-    key : "YOUR_KEY"
-    messageOptions:
-      timeToLive: 3
-      delayWhileIdle: true
-      collapseKey: 'demo'
-      data: 
-        key1: "test"
+Settings  = require 'settings'
+env       = require './.env'
+config    = new Settings(require('./.msConfig'), { env : env })
+
+module.exports = config
