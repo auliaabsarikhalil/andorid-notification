@@ -30,6 +30,20 @@ module.exports =
 1. Setup data variable at `test/android.coffee`, see the sample code below
 2. run `npm test`
 
+```coffeescript
+data =
+	notificationOptions :
+		title: "test"
+		body : "New Message"
+		icon: 'app_icon'
+		click_action: 'CLICK_TO_ACT'
+		type : 'newmassage'
+		content : "[TEST] new message"
+	tokens : [
+		'ENTER_TOKENS_HERE'
+	]
+```
+
 ## Debug mode
 For Debug Mode just run `DEBUG=Android coffee index.coffee`
 
