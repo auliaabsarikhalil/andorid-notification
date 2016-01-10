@@ -6,15 +6,18 @@ This is the service for sending push notification to android devices
 Everything you need to setup before run the code:
 
 1. [Install and setup coffee](https://www.npmjs.com/package/coffee-script)
-2. Install all required modules : `npm install`
-3. Setup app config at `.msConfig.coffee` , see the sample code below
-4. Create `.env` file, just rename `.env.example` and define your environment
+2. [Install and setup redis](http://redis.io/)
+3. Install all required modules : `npm install`
+4. Setup app config at `.msConfig.coffee` , see the sample code below
+5. Create `.env` file, just rename `.env.example` and define your environment
 
 ```coffeescript
 
 module.exports =
 	# Choose based on your environment
 	common:
+		port: 1593
+		host:"localhost"
 		android:
 			key : "YOUR_KEY"
 			messageOptions:
@@ -23,6 +26,12 @@ module.exports =
 				collapseKey: 'demo'
 				data: 
 					key1: "test"
+		kue:
+			interval: 2000
+			maxActiveJobs: 30
+			attempts : 3
+			backoff:
+				type: "exponential"
 
 ```
 
@@ -63,7 +72,18 @@ For Debug Mode just run `DEBUG=Android coffee index.coffee`
  		"type" : "newmessage",
  		"content" : "[TEST] new message"
     },
+    "queue" : true,
+    "priority" : "high",
     "tokens":["TOKEN_1", "TOKEN_2"]
 }
 
 ```
+
+## Params Glosary
+* `notificationOptions` : `[object]` data that will be used when the device receive this notification
+* `queue` : `[boolean]` if true than your request will be push into queue
+* `priority` : `[string]` define your queue priority `"low" | "normal" | "medium" | "high" | "critical"` . by default its `"normal"`
+* `tokens` : `[array]` list of device tokens
+
+## Monitor your queue
+You can monitor your queue by accessing `/kue` and if you want to see it more beautiful you can access `/kue-ui`

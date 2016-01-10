@@ -10,6 +10,12 @@ module.exports =
 				collapseKey: 'demo'
 				data: 
 					key1: "test"
+		kue:
+			interval: 2000
+			maxActiveJobs: 30
+			attempts : 3
+			backoff:
+				type: "exponential"
 
 	development:
 		port: 1593

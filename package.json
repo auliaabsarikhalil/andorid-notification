@@ -1,6 +1,6 @@
 {
   "name": "android-notification",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Android Push Notification with NodeJs",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,8 @@
     "debug": "^2.2.0",
     "expect.js": "^0.3.1",
     "express": "^4.13.3",
+    "kue": "^0.10.4",
+    "kue-ui": "^0.1.0",
     "node-gcm": "^0.12.1",
     "settings": "^0.1.1",
     "should": "^7.1.1"
