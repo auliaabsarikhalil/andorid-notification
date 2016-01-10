@@ -79,7 +79,7 @@ For Debug Mode just run `DEBUG=Android coffee index.coffee`
 
 ```
 
-## Params Glosary
+## Params Glossary
 | Params        | Type     | Description |
 | ------------- |:-------------:| ------------|
 | notificationOptions | Object | Data that will be used when the device receive this notification  |
