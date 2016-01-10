@@ -80,7 +80,7 @@ For Debug Mode just run `DEBUG=Android coffee index.coffee`
 ```
 
 ## Params Glosary
-| Params        | Data Type     | Description |
+| Params        | Type     | Description |
 | ------------- |:-------------:| ------------|
 | notificationOptions | Object | Data that will be used when the device receive this notification  |
 | queue | Boolean | if true than your request will be push into queue |
