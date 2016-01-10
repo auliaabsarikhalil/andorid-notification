@@ -80,10 +80,12 @@ For Debug Mode just run `DEBUG=Android coffee index.coffee`
 ```
 
 ## Params Glosary
-* `notificationOptions` : `[object]` data that will be used when the device receive this notification
-* `queue` : `[boolean]` if true than your request will be push into queue
-* `priority` : `[string]` define your queue priority `"low" | "normal" | "medium" | "high" | "critical"` . by default its `"normal"`
-* `tokens` : `[array]` list of device tokens
+| Params        | Data Type     | Description |
+| ------------- |:-------------:| ------------|
+| notificationOptions | Object | Data that will be used when the device receive this notification  |
+| queue | Boolean | if true than your request will be push into queue |
+| priority | String | define your queue priority `"low", "normal", "medium", "high"`, or `"critical"` . by default its `"normal"` |
+| tokens | Array | list of device tokens |
 
 ## Monitor your queue
 You can monitor your queue by accessing `/kue` and if you want to see it more beautiful you can access `/kue-ui`
